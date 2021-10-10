@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot with company logo 1`] = `
+<DocumentFragment>
+  <a
+    class="CompanyCard card"
+    href="/companies/abc"
+  >
+    <div
+      class="card-body"
+    >
+      <h6
+        class="card-title"
+      >
+        ABC Apparel
+      </h6>
+      <p>
+        <small>
+          ABC Apparel is an exceptional outfit
+        </small>
+      </p>
+    </div>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`matches snapshot without company logo 1`] = `
+<DocumentFragment>
+  <a
+    class="CompanyCard card"
+    href="/companies/abc"
+  >
+    <div
+      class="card-body"
+    >
+      <h6
+        class="card-title"
+      >
+        ABC Apparel
+      </h6>
+      <p>
+        <small>
+          ABC Apparel is an exceptional outfit
+        </small>
+      </p>
+    </div>
+  </a>
+</DocumentFragment>
+`;

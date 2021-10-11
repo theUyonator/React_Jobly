@@ -91,7 +91,7 @@ static async register(data) {
 /**Save changes to user profile */
 
 static async saveProfile(username, data) {
-  let res = await this.request(`users/${username}`, date, "patch");
+  let res = await this.request(`users/${username}`, data, "patch");
   return res.user;
 }
 }

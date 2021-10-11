@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 
 /**This component shows bootstrap style alerts  */
 

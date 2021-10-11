@@ -5,7 +5,10 @@ import { MemoryRouter } from "react-router";
 
 // smoke test
 test("renders without crashing", function() {
-    render(<CompanyCard />);
+    render(
+    <MemoryRouter>
+        <CompanyCard />
+    </MemoryRouter>);
   });
 
 test("matches snapshot with company logo", function () {

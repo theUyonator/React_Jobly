@@ -1,26 +1,21 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import JobCard from "./JobCard";
-import { UserProvider } from "../testUtils";
+import JobList from "./JobList";
+
 
 
 // smoke test
 test("renders without crashing", function() {
     render(
-    <UserProvider>
-        <JobCard />
-    </UserProvider>
+        <JobList />
     );
   });
 
 // sanpshot test
 
 test("matches snapshot", function () {
-    let item = { title: "Manager", salary: 120000, equity: 3};
     const { asFragment } = render (
-        <UserProvider>
-            <JobCard item={item}/>
-        </UserProvider>
+            <JobList />
     );
     expect(asFragment()).toMatchSnapshot();
 })
